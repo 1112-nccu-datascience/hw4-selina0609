@@ -2,7 +2,7 @@
 
 #### Name: [Selina]
 #### Student ID: [112753208]
-#### ShinyApps link: [<https://yourname.shinyapps.io/NCCU_DS2023_hw4_studentID/>]
+#### ShinyApps link: [<https://selina0609.shinyapps.io/NCCU_DS2023_hw4_112753208/>]
 
 ## Description
 
