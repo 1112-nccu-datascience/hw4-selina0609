@@ -19,7 +19,7 @@ pc_choices <- c(PC1 = 1, PC2 = 2, PC3 = 3, PC4 = 4)
 
 ui <- shinyUI(
   navbarPage(
-    "羅鈺涵的hw4",
+    "112753208_資科碩一_羅鈺涵hw4",
     tabPanel(
       "pca",
       fluidRow(
@@ -56,8 +56,7 @@ ui <- shinyUI(
       column(
         3,
         h4("iris data"),
-        textInput("txtInput","The Iris dataset was used in R.A. Fisher's classic 1936 paper, The Use of Multiple Measurements in Taxonomic Problems, and can also be found on the UCI Machine Learning Repository."
-        ), 
+        textOutput("txtOutput"),
         tableOutput('iris_data')
       )
     ))
@@ -110,6 +109,10 @@ server <- function(input, output, session) {
     
     output$input_data <- renderTable({
       log.ir
+    })
+    
+    output$txtOutput <- renderText({
+      "The Iris dataset was used in R.A. Fisher's classic 1936 paper, The Use of Multiple Measurements in Taxonomic Problems, and can also be found on the UCI Machine Learning Repository."
     })
     
     output$iris_data <- renderTable({
